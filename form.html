@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="styles/style.css"> 
+</head>
+<body style="display: flex; align-items: center; justify-content: center;">
+  <div class="form-container">
+    <h2>Book Your Appointment</h2>
+    <form action="#submit" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Full Name:</label></td>
+          <td><input type="text" id="name" name="name" placeholder="Enter your full name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number:</label></td>
+          <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required></td>
+        </tr>
+        <tr>
+          <td><label for="service">Service Type:</label></td>
+          <td>
+            <select id="service" name="service" required>
+              <option value="">-- Select a Service --</option>
+              <option value="relationship-advice">Relationship Advice</option>
+              <option value="breakup-solutions">Breakup Solutions</option>
+              <option value="patch-up-services">Patch-up Services</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="date">Preferred Date:</label></td>
+          <td><input type="date" id="date" name="date" required></td>
+        </tr>
+        <tr>
+          <td><label for="message">Additional Notes:</label></td>
+          <td><textarea id="message" name="message" rows="4" placeholder="Enter any additional details"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <button type="submit" class="submit-button">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  
+</body>
+</html>

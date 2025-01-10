@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .contact-form-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 400px;
+      margin: 50px;
+      margin-left: 33%;
+    }
+
+    .contact-form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-form-container table {
+      width: 100%;
+      
+    }
+
+    .contact-form-container table td {
+      padding: 10px 0;
+    }
+
+    .contact-form-container label {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-form-container input, 
+    .contact-form-container textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .contact-form-container textarea {
+      resize: none;
+    }
+
+    .contact-form-container .submit-btn {
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .contact-form-container .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="logo">
+            <img src="assets/re.png" alt="Relationship Expert Logo">
+          </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <a href="form.html" class="btn">Book Now</a>
+    </nav>
+  </header>
+  <div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <form action="submit_contact.php" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Your Name:</label></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Your Email:</label></td>
+        </tr>
+        <tr>
+          <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Your Phone Number:</label></td>
+        </tr>
+        <tr>
+          <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required></td>
+        </tr>
+        <tr>
+          <td><label for="message">Your Message:</label></td>
+        </tr>
+        <tr>
+          <td><textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Send Message" class="submit-btn"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <section class="footer">
+    <footer>
+      <div class="footer-container">
+        <!-- Social Media Links -->
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="#"><img src="assets/facebook.png" alt="Facebook"> Facebook</a></li>
+            <li><a href="#"><img src="assets/twitter.png" alt="Twitter"> Twitter</a></li>
+            <li><a href="#"><img src="assets/instagram.png" alt="Instagram"> Instagram</a></li>
+          </ul>
+        </div>
+  
+        <!-- Privacy and Terms Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Information -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><img src="assets/gmail.png" alt="Email"> info@relationexpert.com</p>
+          <p><img src="assets/old-typical-phone.png" alt="Phone"> +1-800-123-4567</p>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2025 Relationship Expert. All rights reserved.</p>
+    </footer>
+  </section>
+  
+  <script src="scripts/main.js"></script>
+</body>
+</html>
