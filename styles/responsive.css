@@ -1,0 +1,55 @@
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-links li {
+      margin: 5px 0;
+    }
+  
+    .btn {
+      margin: 10px 0;
+    }
+  
+    .services .service-detail,
+    .about,
+    .contact {
+      padding: 10px;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }
+  
+  /* Responsive styles for very small screens */
+  @media screen and (max-width: 480px) {
+    header {
+      text-align: center;
+    }
+  
+    .logo img {
+      width: 150px;
+    }
+  
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    footer p {
+      font-size: 0.8rem;
+    }
+  }
+  
